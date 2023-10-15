@@ -3,12 +3,8 @@
 # ребенок, если известно, что Петя и Сережа сделали одинаковое
 # количество журавликов, а Катя сделала в два раза больше журавликов,
 # чем Петя и Сережа вместе?
-total_cranes = int(input("Введите общее количество журавликов, которых сделали друзья: "))
-
-i = total_cranes // 4  # Петя
-j = total_cranes // 4  # Катя
-k = (total_cranes // 4) * 2  # Сережа
-
-print("Петя сделал: ", i)
-print("Катя сделала: ", j)
-print("Сережа сделал: ", k)
+n = int(input())
+sergey = n / 6
+petr = sergey
+ekaterina = (sergey + petr) * 2
+print(int(sergey), int(ekaterina), int(petr))
