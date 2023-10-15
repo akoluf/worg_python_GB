@@ -7,10 +7,9 @@ import random
 
 n = int(input("Введите количество монеток: "))  # Запрос количества монеток
 
-flips = 0  # Количество переворотов
+coins = random.choices([0, 1], k=n)  # Генерация списка монеток со значениями 0 и 1
 
-for _ in range(n):
-    coin = random.randint(0, 1)  # Генерация случайного числа (0 или 1)
-    flips += coin  # Увеличение количества переворотов, если выпало 1
+flips = sum(coins) if sum(coins) <= n - sum(coins) else n - sum(coins)  # Определение количества переворотов
 
-print(flips)
+print("Список монеток:", coins)
+print("Необходимо перевернуть", flips, "монетки(ок)")
