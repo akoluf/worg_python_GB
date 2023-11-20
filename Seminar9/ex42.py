@@ -13,4 +13,4 @@ subset = df[df['population'] == min_population]
 
 # Шаг 4: Нахождение максимального значения переменной "households" в этом подмножестве данных
 max_households_in_min_population = subset['households'].max()
-print("Максимальное значение переменной 'households' в зоне минимального значения переменной 'population':", max_households_in_min_population)
+print("Ответ:", max_households_in_min_population)
