@@ -4,7 +4,7 @@
 import pandas as pd
 
 # Шаг 1: Чтение файла
-df = pd.read_csv('sample_data/california_housing_train.csv')
+df = pd.read_csv('/media/iht/Хранилище/GB/DZ_python_GB/Seminar9/sample_data/california_housing_train.csv')
 
 # Шаг 2: Выведение названий столбцов
 column_names = df.columns
