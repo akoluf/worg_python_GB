@@ -29,3 +29,4 @@ one_hot_data = pd.DataFrame([categories_dict[value] for value in data['whoAmI']]
 data = pd.concat([data, one_hot_data], axis=1)
 
 data.head()
+print(data.head)
